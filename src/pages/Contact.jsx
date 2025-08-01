@@ -15,12 +15,12 @@ const Contact = () => {
         exit={{ opacity: 0 }}
       >
         <Navbar />
-        <section id="contact">
+        <motion.section id="contact" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{t('navbar.contact')}</h1>
           <p><a href="https://t.me/uzinex">{t('contact.telegram')}</a></p>
           <p><a href="https://threads.net/@uzinex_official">{t('contact.threads')}</a></p>
           <p>{t('contact.email')}: info@uzinex.uz</p>
-        </section>
+        </motion.section>
         <Footer />
       </motion.div>
     </PageWrapper>

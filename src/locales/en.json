@@ -24,7 +24,25 @@
   },
   "about": {
     "title": "About Uzinex",
-    "description": "Uzinex develops solutions in blockchain, AI and cybersecurity. Our mission is to drive Uzbekistan's digital future."
+    "description": "Uzinex develops solutions in blockchain, AI and cybersecurity. Our mission is to drive Uzbekistan's digital future.",
+    "missionTitle": "Mission",
+    "mission": "Create world-class innovations that strengthen Uzbekistan's digital sovereignty and advance blockchain, AI and security.",
+    "directionsTitle": "Key Activities",
+    "directions": {
+      "software": "Software development",
+      "cyber": "Cybersecurity",
+      "blockchain": "Blockchain and crypto",
+      "ai": "Artificial intelligence",
+      "defense": "Defense and government tech",
+      "fintech": "Financial technology"
+    },
+    "philosophyTitle": "Innovation Philosophy",
+    "philosophy": {
+      "sovereignty": "Digital sovereignty",
+      "zeroTrust": "Zero Trust Architecture",
+      "aiFirst": "AI-first approach",
+      "openWorld": "Open to the World"
+    }
   },
   "projects": {
     "title": "Our Projects"

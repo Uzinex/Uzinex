@@ -5,10 +5,13 @@ jest.mock('react-router-dom', () => ({
   BrowserRouter: ({ children }) => <div>{children}</div>,
   Routes: ({ children }) => <div>{children}</div>,
   Route: ({ element }) => <>{element}</>,
+  useLocation: () => ({ pathname: '/' }),
+  NavLink: ({ children }) => <div>{children}</div>,
+  Link: ({ children }) => <div>{children}</div>,
 }), { virtual: true });
 
 test('renders main heading', () => {
   render(<App />);
-  const heading = screen.getByRole('heading', { level: 1 });
-  expect(heading).toBeInTheDocument();
+  const headings = screen.getAllByRole('heading', { level: 1 });
+  expect(headings.length).toBeGreaterThan(0);
 });

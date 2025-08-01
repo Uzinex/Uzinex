@@ -21,5 +21,12 @@
   },
   "footer": {
     "rights": "© 2025 Uzinex MCHJ. Barcha huquqlar himoyalangan."
+  },
+  "about": {
+    "title": "Uzinex haqida",
+    "description": "Uzinex blokcheyn, sun'iy intellekt va kiberxavfsizlik sohalarida echimlar yaratadi. Biz O'zbekistonning raqamli kelajagiga hissa qo'shamiz."
+  },
+  "projects": {
+    "title": "Bizning loyihalar"
   }
 }

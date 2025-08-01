@@ -7,6 +7,13 @@
   "home": {
     "title": "Uzinex",
     "subtitle": "Next-generation tech company from Uzbekistan. Building the country's digital independence.",
+    "cta": "Explore projects",
+    "featuresTitle": "Our Expertise",
+    "features": {
+      "blockchain": "Advanced blockchain solutions",
+      "ai": "AI-driven analytics",
+      "cyber": "Enterprise cybersecurity"
+    },
     "projects": {
       "uzcoin": "Uzcoin",
       "freelance": "Freelance",

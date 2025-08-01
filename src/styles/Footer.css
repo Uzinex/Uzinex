@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1c0038;
+  background: linear-gradient(90deg, #1c0038, #350075);
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -13,6 +13,7 @@
   color: #ccc;
   margin: 0 10px;
   font-size: 14px;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {

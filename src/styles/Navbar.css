@@ -2,16 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #350075;
+  background: linear-gradient(90deg, #350075, #5d00b7);
   padding: 20px 40px;
   color: white;
   flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
+  transition: opacity 0.3s;
+}
+.logo:hover {
+  opacity: 0.8;
 }
 
 .navbar-right {
@@ -24,10 +28,15 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 .navbar-right a:hover {
-  text-decoration: underline;
+  color: #e0e0e0;
+}
+
+.navbar-right .active {
+  border-bottom: 2px solid #fff;
 }
 
 @media (max-width: 768px) {

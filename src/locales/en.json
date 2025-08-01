@@ -21,5 +21,12 @@
   },
   "footer": {
     "rights": "© 2025 Uzinex LLC. All rights reserved."
+  },
+  "about": {
+    "title": "About Uzinex",
+    "description": "Uzinex develops solutions in blockchain, AI and cybersecurity. Our mission is to drive Uzbekistan's digital future."
+  },
+  "projects": {
+    "title": "Our Projects"
   }
 }

@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
+import PageWrapper from '../components/PageWrapper';
 
 const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Navbar />
+    <PageWrapper>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <Navbar />
 
       <section id="intro">
         <h1>{t('home.title')}</h1>
@@ -27,8 +30,9 @@ const Home = () => {
         <p>{t('contact.email')}: info@uzinex.uz</p>
       </section>
 
-      <Footer />
-    </>
+        <Footer />
+      </motion.div>
+    </PageWrapper>
   );
 };
 

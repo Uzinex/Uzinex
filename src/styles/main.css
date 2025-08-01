@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background: linear-gradient(180deg, #f9f9f9 0%, #eae2f8 100%);
   color: #222;
 }
 
@@ -26,6 +26,16 @@ h1, h2, h3 {
   color: var(--uzinex-purple);
 }
 
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
 section {
   background-color: white;
   margin-bottom: 40px;
@@ -41,19 +51,18 @@ section:hover {
   display: inline-block;
   margin: 10px;
   padding: 12px 20px;
-  background-color: var(--uzinex-purple);
+  background: linear-gradient(90deg, #4b0082, #7b1fa2);
   color: white;
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: transform 0.3s, background 0.3s;
 }
 .project-links a:hover {
-  background-color: #350066;
+  background: linear-gradient(90deg, #350066, #5a009e);
+  transform: scale(1.05);
 }
 
-section {
-  padding: 40px 20px;
-}
+
 
 @media (max-width: 600px) {
   section {

@@ -24,7 +24,25 @@
   },
   "about": {
     "title": "Uzinex haqida",
-    "description": "Uzinex blokcheyn, sun'iy intellekt va kiberxavfsizlik sohalarida echimlar yaratadi. Biz O'zbekistonning raqamli kelajagiga hissa qo'shamiz."
+    "description": "Uzinex blokcheyn, sun'iy intellekt va kiberxavfsizlik sohalarida echimlar yaratadi. Biz O'zbekistonning raqamli kelajagiga hissa qo'shamiz.",
+    "missionTitle": "Missiya",
+    "mission": "Dunyo darajasidagi innovatsiyalarni yaratib, mamlakatning raqamli mustaqilligini mustahkamlash va blokcheyn, sun'iy intellekt hamda xavfsizlikni rivojlantirish.",
+    "directionsTitle": "Asosiy yo'nalishlar",
+    "directions": {
+      "software": "Dasturiy ta'minot ishlab chiqish",
+      "cyber": "Kiberxavfsizlik",
+      "blockchain": "Blokcheyn va kriptovalyutalar",
+      "ai": "Sun'iy intellekt",
+      "defense": "Harbiy va davlat texnologiyalari",
+      "fintech": "Fintex"
+    },
+    "philosophyTitle": "Innovatsiyalar va falsafa",
+    "philosophy": {
+      "sovereignty": "To'liq raqamli suverenitet",
+      "zeroTrust": "Zero Trust Arxitekturasi",
+      "aiFirst": "AI-first",
+      "openWorld": "Dunyo bilan ochiq"
+    }
   },
   "projects": {
     "title": "Bizning loyihalar"

@@ -10,7 +10,7 @@ const PageWrapper = ({ children }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  return loading ? <Loader /> : children;
+  return loading ? <Loader /> : <div className="page-wrapper">{children}</div>;
 };
 
 export default PageWrapper;

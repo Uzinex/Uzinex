@@ -15,7 +15,7 @@ const Projects = () => {
         exit={{ opacity: 0 }}
       >
         <Navbar />
-        <section id="projects">
+        <motion.section id="projects" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{t('projects.title')}</h1>
           <ul className="project-list">
             <li>Uzcoin</li>
@@ -23,7 +23,7 @@ const Projects = () => {
             <li>Host</li>
             <li>Bank</li>
           </ul>
-        </section>
+        </motion.section>
         <Footer />
       </motion.div>
     </PageWrapper>

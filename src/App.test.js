@@ -10,8 +10,8 @@ jest.mock('react-router-dom', () => ({
   Link: ({ children }) => <div>{children}</div>,
 }), { virtual: true });
 
-test('renders main heading', () => {
+test('renders main heading', async () => {
   render(<App />);
-  const headings = screen.getAllByRole('heading', { level: 1 });
+  const headings = await screen.findAllByRole('heading', { level: 1 });
   expect(headings.length).toBeGreaterThan(0);
 });

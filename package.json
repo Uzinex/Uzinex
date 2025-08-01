@@ -2,6 +2,7 @@
   "name": "uzinex-site",
   "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "framer-motion": "^10.16.5",
     "i18next": "^25.3.2",
@@ -15,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,6 +36,10 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1"
+    "@testing-library/user-event": "^14.6.1",
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+    "inlineCss": true
   }
 }

@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "about": "Biz haqimizda",
+    "projects": "Loyihalar",
+    "contact": "Aloqa"
+  },
+  "home": {
+    "title": "Uzinex",
+    "subtitle": "O'zbekistondagi yangi avlod texnologik kompaniyasi. Mamlakat raqamli mustaqilligini yaratamiz.",
+    "projects": {
+      "uzcoin": "Uzcoin",
+      "freelance": "Freelance",
+      "host": "Host",
+      "bank": "Bank"
+    }
+  },
+  "contact": {
+    "telegram": "Bizning Telegram",
+    "threads": "Threads akkaunt",
+    "email": "Email orqali bog'lanish"
+  },
+  "footer": {
+    "rights": "© 2025 Uzinex MCHJ. Barcha huquqlar himoyalangan."
+  }
+}

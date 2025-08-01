@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Uzinex",
+    "subtitle": "Next-generation tech company from Uzbekistan. Building the country's digital independence.",
+    "projects": {
+      "uzcoin": "Uzcoin",
+      "freelance": "Freelance",
+      "host": "Host",
+      "bank": "Bank"
+    }
+  },
+  "contact": {
+    "telegram": "Our Telegram",
+    "threads": "Threads account",
+    "email": "Contact by Email"
+  },
+  "footer": {
+    "rights": "© 2025 Uzinex LLC. All rights reserved."
+  }
+}

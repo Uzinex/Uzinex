@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "about": "О нас",
+    "projects": "Проекты",
+    "contact": "Контакты"
+  },
+  "home": {
+    "title": "Uzinex",
+    "subtitle": "Технологическая компания нового поколения из Узбекистана. Создаём цифровую независимость страны.",
+    "projects": {
+      "uzcoin": "Uzcoin",
+      "freelance": "Freelance",
+      "host": "Host",
+      "bank": "Bank"
+    }
+  },
+  "contact": {
+    "telegram": "Наш Telegram",
+    "threads": "Threads аккаунт",
+    "email": "Связаться по почте"
+  },
+  "footer": {
+    "rights": "© 2025 Uzinex LLC. Все права защищены."
+  }
+}

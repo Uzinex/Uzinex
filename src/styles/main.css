@@ -16,6 +16,49 @@ section {
   margin: 0 auto;
 }
 
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #d1c4e9, #f3e5f5);
+}
+
+.hero .subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.hero .cta {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--uzinex-purple);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero .cta:hover {
+  background: #350066;
+  transform: translateY(-2px);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features-list li {
+  flex: 1 1 200px;
+  background: var(--uzinex-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
 :root {
   --uzinex-purple: #4b0082;
   --uzinex-dark: #1c0038;
@@ -67,6 +110,14 @@ section:hover {
 @media (max-width: 600px) {
   section {
     padding: 20px 15px;
+  }
+
+  .features-list {
+    flex-direction: column;
+  }
+
+  .hero .cta {
+    width: 100%;
   }
 
   h1 {

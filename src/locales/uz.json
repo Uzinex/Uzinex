@@ -7,6 +7,13 @@
   "home": {
     "title": "Uzinex",
     "subtitle": "O'zbekistondagi yangi avlod texnologik kompaniyasi. Mamlakat raqamli mustaqilligini yaratamiz.",
+    "cta": "Loyihalarni ko'rish",
+    "featuresTitle": "Bizning yo'nalishlar",
+    "features": {
+      "blockchain": "Ilg'or blokcheyn yechimlari",
+      "ai": "AI asosidagi tahlillar",
+      "cyber": "Korparativ kiberxavfsizlik"
+    },
     "projects": {
       "uzcoin": "Uzcoin",
       "freelance": "Freelance",

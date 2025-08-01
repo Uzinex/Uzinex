@@ -1,12 +1,23 @@
-import './Footer.css';
+import '../styles/Footer.css';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
-      <p>© 2025 Uzinex LLC. Все права защищены.</p>
+      <p>{t('footer.rights')}</p>
       <div className="footer-links">
-        <a href="https://t.me/uzinex" target="_blank" rel="noopener noreferrer">Telegram</a>
-        <a href="https://threads.net/@uzinex_official" target="_blank" rel="noopener noreferrer">Threads</a>
+        <a href="https://t.me/uzinex" target="_blank" rel="noopener noreferrer">
+          {t('contact.telegram')}
+        </a>
+        <a
+          href="https://threads.net/@uzinex_official"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t('contact.threads')}
+        </a>
       </div>
     </footer>
   );

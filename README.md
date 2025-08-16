@@ -4,25 +4,41 @@ Backend MVP marketplace for clients and freelancers built with Django REST Frame
 
 ## Requirements
 - Python 3.12
-- PostgreSQL 16
 
 ## Local setup
+
+### Вариант A (SQLite, без настроек БД)
+
 ```bash
-cp .env.example .env  # adjust values
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+cp .env.example .env   # оставить DATABASE_URL закомментированным
 python manage.py migrate
-python manage.py createsuperuser
-python manage.py seed_demo  # optional demo data
 python manage.py runserver
 ```
-Visit http://localhost:8000/api/docs/ for Swagger UI and http://localhost:8000/admin/ for admin panel.
 
-## Docker
+### Вариант B (Docker Postgres)
+
 ```bash
-docker-compose up --build
+docker compose up -d
+cp .env.example .env
+# в .env раскомментировать DATABASE_URL=postgres://uzinex:uzinexpass@127.0.0.1:5432/uzinex
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 ```
-Application will be available at http://localhost:8000/api/docs/.
+
+### Проверка
+
+```bash
+python manage.py check
+python - <<<'from django.conf import settings; print(settings.DATABASES["default"]["ENGINE"])'
+```
+
+Visit http://localhost:8000/api/docs/ for Swagger UI and http://localhost:8000/admin/ for admin panel.
 
 ## Sample requests
 ```bash
@@ -63,3 +79,4 @@ To add a new server-rendered page:
 
 1. Create a template inside `templates/pages/`.
 2. Add a corresponding class-based view and URL pattern.
+

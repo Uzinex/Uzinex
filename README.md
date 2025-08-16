@@ -48,3 +48,18 @@ curl -X POST http://localhost:8000/api/marketplace/proposals/ \
   -H 'Content-Type: application/json' \
   -d '{"project":1,"cover_letter":"Готов сделать","bid_amount":500,"eta_days":10}'
 ```
+
+## SSR Pages & Static
+
+HTML templates live in `templates/` and static assets in `static/`.
+
+Collect static files for production:
+
+```bash
+python manage.py collectstatic --noinput
+```
+
+To add a new server-rendered page:
+
+1. Create a template inside `templates/pages/`.
+2. Add a corresponding class-based view and URL pattern.

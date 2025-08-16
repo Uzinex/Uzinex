@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Threads - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h2>Your Threads</h2>
+<ul>
+  {% for thread in object_list %}
+  <li><a href="{% url 'thread_detail' thread.pk %}">{{ thread.project.title }}</a></li>
+  {% empty %}
+  <li>No threads.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

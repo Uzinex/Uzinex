@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}My Profile - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h2>{{ request.user.username }}</h2>
+<p>{{ request.user.email }}</p>
+<p>{{ request.user.profile.bio }}</p>
+{% if request.user.profile.skills %}
+<ul>
+  {% for skill in request.user.profile.skills %}
+  <li>{{ skill }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Add skills</p>
+{% endif %}
+<p><a href="{% url 'profile_edit' %}">Edit Profile</a></p>
+{% endblock %}

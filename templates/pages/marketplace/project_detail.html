@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}{{ object.title }} - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h2>{{ object.title }}</h2>
+<p>{{ object.description }}</p>
+<p>Budget: {{ object.budget_min }} - {{ object.budget_max }}</p>
+<p>Skills: {{ object.skills|join:', ' }}</p>
+<p>Status: {{ object.status }}</p>
+<p><a href="#">Send proposal</a></p>
+{% endblock %}

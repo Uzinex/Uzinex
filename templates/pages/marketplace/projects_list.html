@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Projects - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h2>Projects</h2>
+<form method="get" class="filters">
+  <input type="text" name="status" placeholder="Status" value="{{ request.GET.status }}" />
+  <input type="text" name="skill" placeholder="Skills" value="{{ request.GET.skill }}" />
+  <input type="number" step="0.01" name="budget_min" placeholder="Budget min" value="{{ request.GET.budget_min }}" />
+  <input type="number" step="0.01" name="budget_max" placeholder="Budget max" value="{{ request.GET.budget_max }}" />
+  <button type="submit">Apply</button>
+</form>
+{% for project in object_list %}
+<div class="card">
+  <h3><a href="{% url 'project_detail' project.pk %}">{{ project.title }}</a></h3>
+  <p>{{ project.description|truncatechars:150 }}</p>
+</div>
+{% empty %}
+<p>No projects.</p>
+{% endfor %}
+{% endblock %}

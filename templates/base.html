@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include '_partials/_head.html' %}
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% block head_extra %}{% endblock %}
+  </head>
+  <body>
+    {% include '_partials/_navbar.html' %}
+    {% include '_partials/_messages.html' %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    {% include '_partials/_footer.html' %}
+    <script src="{% static 'js/app.js' %}"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h1>Welcome to {{ PROJECT_NAME }}</h1>
+<p><a href="{% url 'projects_list' %}">Browse Projects</a></p>
+<div class="projects">
+  {% for project in latest_projects %}
+  <div class="card">
+    <h3><a href="{% url 'project_detail' project.pk %}">{{ project.title }}</a></h3>
+    <p>{{ project.description|truncatechars:100 }}</p>
+  </div>
+  {% empty %}
+  <p>No projects yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

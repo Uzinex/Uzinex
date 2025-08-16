@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Thread - {{ PROJECT_NAME }}{% endblock %}
+{% block content %}
+<h2>Thread for {{ object.project.title }}</h2>
+<div class="messages">
+  {% for m in object.messages.all %}
+  <div class="message"><strong>{{ m.sender.username }}:</strong> {{ m.body }}</div>
+  {% endfor %}
+</div>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Send</button>
+</form>
+{% endblock %}

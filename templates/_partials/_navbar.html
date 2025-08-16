@@ -1,0 +1,18 @@
+{% load static %}
+<nav class="navbar">
+  <a href="{% url 'home' %}" class="logo"><img src="{% static 'img/logo.svg' %}" alt="Uzinex" /></a>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'projects_list' %}">Projects</a></li>
+    {% if user.is_authenticated %}
+      <li><a href="{% url 'me' %}">Me</a></li>
+      {% if user.role == 'client' %}
+      <li><a href="{% url 'project_create' %}">New Project</a></li>
+      {% endif %}
+      <li><a href="{% url 'logout' %}" data-logout>Logout</a></li>
+    {% else %}
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    {% endif %}
+  </ul>
+</nav>
